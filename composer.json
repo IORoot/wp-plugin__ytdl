@@ -1,0 +1,10 @@
+{
+    "autoload": {
+        "classmap": [
+            "src"
+        ]
+    },
+    "require": {
+        "athlon1600/youtube-downloader": "^2.1"
+    }
+}
