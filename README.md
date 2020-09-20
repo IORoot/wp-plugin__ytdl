@@ -2,7 +2,7 @@
 
 Quick and dirty youtube video downloader using two different methods.
 
-## Dependencies
+## Dependencies
 
 -   Wordpress
 -   composer
