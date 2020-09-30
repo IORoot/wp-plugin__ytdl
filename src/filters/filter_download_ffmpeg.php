@@ -5,7 +5,7 @@ class andyp_filter_downloader_ffmpeg
 
     public function __construct()
     {
-        add_filter('ytdl_ffmpeg', array($this, 'ytdl_ffmpeg_filter'), 10, 3);
+        add_filter('ytdl_ffmpeg', array($this, 'ytdl_ffmpeg_filter'), 10, 4);
     }
 
 
@@ -19,7 +19,7 @@ class andyp_filter_downloader_ffmpeg
      * @param string $videocode
      * @return array
      */
-    function ytdl_ffmpeg_filter($videocode, $starttime = null, $duration = null)
+    function ytdl_ffmpeg_filter($videocode, $starttime = null, $duration = null, $suffix = null)
     {
 
         if ($videocode == null || $videocode == ''){ return; }
@@ -28,6 +28,7 @@ class andyp_filter_downloader_ffmpeg
         $yt->set_videocode($videocode);
         $yt->set_starttime($starttime);
         $yt->set_duration($duration);
+        $yt->set_suffix($suffix);
         $yt->andyp_ytdl_run();
         $result = $yt->get_results();
 

@@ -8,6 +8,7 @@ class andyp_downloader_ffmpeg
     private $video_code;
     private $starttime = '00:00:00';
     private $duration = '00:00:10';
+    private $suffix = '';
 
 
     public function set_videocode($video_code)
@@ -23,6 +24,11 @@ class andyp_downloader_ffmpeg
     public function set_duration($duration)
     {
         $this->duration = $duration;
+    }
+
+    public function set_suffix($suffix)
+    {
+        $this->suffix = $suffix;
     }
     
 
@@ -89,7 +95,7 @@ class andyp_downloader_ffmpeg
 
     private function set_filename()
     {
-        $this->target['filename'] = $this->target['path'] . '/' . $this->video_code . '.' .$this->target['ext'];
+        $this->target['filename'] = $this->target['path'] . '/' . $this->video_code . $this->suffix . '.' .$this->target['ext'];
     }
 
 
