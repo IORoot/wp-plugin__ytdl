@@ -2,9 +2,9 @@
 
 /*
  * @wordpress-plugin
- * Plugin Name:       _ANDYP - Youtube Downloader
+ * Plugin Name:       _ANDYP - Pipeline - Youtube Downloader
  * Plugin URI:        http://londonparkour.com
- * Description:       <strong>🔌PLUGIN</strong> | <em>ANDYP > YT Downloader</em> | Download Youtube Videos
+ * Description:       <strong>🤖 Pipeline</strong> | <em> YT Downloader | Download Youtube Videos
  * Version:           1.0.0
  * Author:            Andy Pearson
  * Author URI:        https://londonparkour.com
@@ -19,13 +19,8 @@ define( 'ANDYP_YTDL_PATH', __DIR__ );
 // └─────────────────────────────────────────────────────────────────────────┘
 require __DIR__.'/vendor/autoload.php';
 
-/**
- * shortcode [youtube_dl]
- */
-new andyp_shortcode_downloader_curl;
 
 /**
  * filter name = get_yt_video
  */
-new andyp_filter_downloader_curl;  
 new andyp_filter_downloader_ffmpeg;  
