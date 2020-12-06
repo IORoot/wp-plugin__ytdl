@@ -15,7 +15,13 @@ Quick and dirty youtube video downloader using two different methods.
 
 1.  Clone the repo.
 2.  do a `composer install`
-3.  install FFMpeg on your system if not already.
+3.  install FFMpeg on your system if not already with:
+
+```
+sudo apt update
+sudo apt install ffmpeg
+ffmpeg -version
+```
 
 
 ## Description

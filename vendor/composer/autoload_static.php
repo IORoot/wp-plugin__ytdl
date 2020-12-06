@@ -21,7 +21,6 @@ class ComposerStaticInit1001954beb50829a280560ae0d62d4f7
     );
 
     public static $classMap = array (
-        'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'andyp_downloader_ffmpeg' => __DIR__ . '/../..' . '/src/downloaders/downloader_ffmpeg.php',
         'andyp_filter_downloader_ffmpeg' => __DIR__ . '/../..' . '/src/filters/filter_download_ffmpeg.php',
     );
